@@ -57,3 +57,16 @@
     background-position: center top;
     background-repeat: no-repeat;
 }
+
+@mixin heading {
+    text-align: center;
+    
+    &::After {
+        content: '';
+        display: block;
+        height: 10rem;
+        background-image: url(/build/img/separador.png);
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

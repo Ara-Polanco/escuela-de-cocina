@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nosotros {
+    padding: v.$separacion 0;
+
+    &__heading {
+        @include m.heading;
+    }
+
+    &__grid {
+        display: flex;
+        flex-direction: column;
+        gap: v.$separacion;
+
+        @include m.tablet { 
+            flex-direction: row;
+        }
+    }
+
+    &__bloque {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+
+       
+        &-heading {
+            font-weight: 700;
+        }
+
+        &-texto {
+            margin-top: auto;
+        }
+
+    }
+    &__imagen {
+        margin: 0 auto;
+    }
+}
+
