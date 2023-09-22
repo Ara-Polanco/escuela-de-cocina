@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'ui/header';
+
+.navegacion {
+    @extend .header__grid;
+
+    &__enlace {
+        font-size: 2.4rem;
+
+        &:hover {
+            color: v.$primario;
+        }
+    }
+}
+
